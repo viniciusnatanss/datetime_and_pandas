@@ -1,0 +1,7 @@
+import datetimeimport pandas as pd
+#c = "https://www.globo.com"#c.textdiahoje = time.strftime("%Y/%m/%d")
+print(diahoje)input()print("Roda outro")
+#data_1 = datetime.datetime.strptime(diahoje, "%Y/%m/%d")#end_date = data_1 + datetime.timedelta(days=90)
+#print(end_date)
+enddate = pd.to_datetime(diahoje) + pd.DateOffset(days=90)
+print(enddate)
